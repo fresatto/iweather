@@ -5695,6 +5695,11 @@ jest-snapshot@^29.7.0:
     pretty-format "^29.7.0"
     semver "^7.5.3"
 
+jest-transformer-svg@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/jest-transformer-svg/-/jest-transformer-svg-2.1.0.tgz#adfa28c57c0ec676235b39b0d7129a8517a64bc8"
+  integrity sha512-UqROTC1szruaDJENDeU95NPQztTTjE02R5Gzxydh+ylahwli7DlkYPGifnH+fc8bNVy905m2HqhPNgwx+Q5TBg==
+
 jest-util@30.0.2:
   version "30.0.2"
   resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-30.0.2.tgz#1bd8411f81e6f5e2ca8b31bb2534ebcd7cbac065"
