@@ -24,3 +24,10 @@ jobs:
 
       - name: Run Tests
         run: npm run test
+  CD:
+    name: Continous Deployment
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
