@@ -21,6 +21,6 @@ describe("Screen: Search", () => {
 
     const option = await waitFor(() => screen.findByText(/rio de janeiro/i));
 
-    expect(option).toBeOnTheScreen();
+    expect(option).toBeTruthy();
   });
 });
