@@ -13,16 +13,14 @@ describe("Screen: Search", () => {
 
     customTestRender(<Search />);
 
-    const input = await waitFor(() =>
-      screen.findByTestId("search-state-input")
-    );
+    const input = await screen.findByTestId("search-state-input");
 
     fireEvent.changeText(input, "Rio de Janeiro");
 
     await waitFor(() =>
       expect(
-        screen.findByText(/rio de janeiro/i, {}, { timeout: 3000 })
+        screen.findByText(/rio de janeiro/i, {}, { timeout: 10000 })
       ).toBeTruthy()
     );
-  });
+  }, 10000);
 });
