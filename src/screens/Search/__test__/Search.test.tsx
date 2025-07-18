@@ -17,10 +17,8 @@ describe("Screen: Search", () => {
 
     fireEvent.changeText(input, "Rio de Janeiro");
 
-    await waitFor(() =>
-      expect(
-        screen.findByText(/rio de janeiro/i, {}, { timeout: 10000 })
-      ).toBeTruthy()
-    );
-  }, 10000);
+    const option = await screen.findByText(/rio de janeiro/i);
+
+    expect(option).toBeTruthy();
+  });
 });
